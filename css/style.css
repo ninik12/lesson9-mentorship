@@ -1,41 +1,147 @@
-.div-wraper{
-    max-width: 1140px;
+/* section N1 */
+.wraper {
+    max-width: 1110px;
     width: 90%;
-    height: 500px;
-    background-color: blueviolet;
     margin: 0 auto;
+    background-color: aliceblue;
     display: flex;
-    column-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
 }
-.box{
-    width: 250px;
-    height: 250px;
+
+.left-wraper {
+    width: 490px;
+    /* height: 288px; */
 }
-.box:nth-child(1){
-    background-color: red;
+
+.button-div {
+    margin-top: 40px;
 }
-.box:nth-child(2){
-    background-color: yellow;
+
+.action-p {
+    width: 236px;
 }
-.box:nth-child(3){
-    background-color: green;
+
+.action-btn1 {
+    background-color: black;
+    border-radius: 32px;
+    width: 100px;
+    height: 48px;
+    border: none;
+    margin-right: 20px;
 }
-.box:nth-child(4){
-    background-color: blue;
+
+.flex {
+    display: flex;
+    align-items: center;
 }
+
+.section1-p {
+    line-height: 28px;
+    letter-spacing: 0px;
+    margin-top: 24px;
+
+
+}
+
+.right-wraper {
+    width: 490px;
+
+}
+
+/* section N3 */
+.div-wraper {
+    background-image: url(../images/CTAImg-Wide-1440px+-New.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 564px;
+    position: relative;
+}
+
+.image-text-block {
+    max-width: 540px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.spacing {
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+
+.white {
+    color: white;
+}
+
+/* fonts */
+.inter-16px {
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+.inter-14px {
+    font-family: 'Inter';
+    font-size: 14px;
+}
+
+.inter-40px {
+    font-family: 'Inter';
+    font-size: 40px;
+}
+
+.inter-18px {
+    font-family: 'Inter';
+    font-size: 18px;
+}
+
+.inter-56px {
+    font-family: 'Inter';
+    font-size: 56px;
+}
+
+.image-text-block {}
+
+.button1 {}
 
 /* responsive */
-
-@media(max-width: 1024px){
-    .div-wraper{
+@media(max-width: 1024px) {
+    .wraper {
         flex-direction: column;
+    }
+
+    .left-wraper {
+        max-width: 630px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        row-gap: 30px;
+        flex-direction: column;
+    }
+
+    .action-p {
+        width: 100%;
+    }
+
+    .right-wraper {
+        width: 100%;
+    }
+
+    .right-wraper-img {
+        width: 100%;
     }
 }
-@media(max-width:495px) {
-    .box:nth-child(4){
-        display: none;
+
+@media(max-width:744px) {
+    .button-div {
+        flex-direction: column;
     }
-    
+    .main-title{
+        font-size: 40px;
+    }
+
 }
