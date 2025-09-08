@@ -114,6 +114,10 @@
 .section3-p2{
     margin: 16px 0;
 }
+.image-section3{
+    border-radius: 12px;
+    width: 504px;
+}
 
 /* section N4 */
 .div-wraper {
